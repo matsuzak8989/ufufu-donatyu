@@ -1,0 +1,1151 @@
+@charset "UTF-8";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F3F0E9;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* -------------------------------- */
+/* ここからbackについて */
+
+.back{
+    position: relative;
+}
+
+.back img.mainback{
+    border: solid;
+    position: absolute;
+    top: -25px;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 1200px;
+    object-fit: cover;
+}
+
+.back img.maskback{
+    position: absolute;
+    z-index: 20;
+    display: block;
+    width: 100%;
+    height: 1200px;
+    object-fit: cover;
+    
+}
+
+/* ここまでがbackについて */
+
+/* ---------------------------------- */
+/* ここからpage-top　開始 */
+  
+
+/* ここからheaderについて */
+#header{
+    /* border: solid; */
+    position: relative;
+    z-index: 30;
+    display: block;
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* margin-left: 30px; */
+    text-align: center;
+}
+
+.toplogo{
+    /* border: solid; */
+    display: block;
+    width: 300px;
+    height: 280px;
+    margin: 0 auto 90px;
+}
+
+#header ul{
+    /* border: solid; */
+    text-align: left;
+    padding: 0 40px;
+}
+
+#header ul p{
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Noto Sans JP";
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#header ul strong{
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+#header ul p:hover strong:hover{
+    /* border: solid; */
+    transform: translateY(-50%);
+}
+
+#header ul span{
+    /* border: solid; */
+    font-size: 14px;
+}
+
+#header .anounce{
+    /* border: solid; */
+    display: inline-block;
+    margin: 50px 0 0 -20px;
+}
+
+#header .anounce p{
+    display: block;
+    width: 350px;
+    height: 120px;
+    margin: auto;
+}
+
+#header .anounce a{
+    display: block;
+    padding: 30px 17px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    transition: all .8s;
+
+}
+#header .anounce a:hover{
+    opacity: 0.6;
+    transition: all .8s;
+}
+
+
+#header .anounce time{
+    font-size: 18px;
+}
+
+#header .anounce span{
+    font-size: 18px;
+    font-weight: 600;
+}
+/* ここまでがheaderについて */
+
+/* ------------------------- */
+/* ここからがmenubtnについて */
+.menubtn{
+    /* border: solid; */
+    position: absolute;
+    top: 500px;
+    right: 0;
+    z-index: 30;
+    margin-right: 30px;
+}
+
+.menubtn .stafflink{
+    /* border: solid; */
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    align-items: center;
+    background-image: url(../img/top_staff_btn.svg);
+    background-repeat: no-repeat;
+    transition: opacity .9s;
+}
+
+.menubtn .stafflink:hover::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/top_staff_btn_h.svg);
+    opacity: 1;
+    transition-duration: 0.9s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: opacity;
+}
+
+.menubtn .shoplink{
+    /* border: solid; */
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    background-image: url(../img/top_menu_btn.svg);
+    background-repeat: no-repeat;
+    transition: opacity .9s;
+}
+
+.menubtn .shoplink span{
+    /* border: solid; */
+    color: #F3F0E9;
+    font-size: 24px;
+    text-align: center;
+    margin: auto;
+}
+
+.menubtn .shoplink:hover span{
+    position: relative;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin: auto;
+    z-index: 40;
+}
+
+.menubtn .shoplink:hover::after{
+    /* border: solid; */
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/menu_btn02_h.svg);
+    opacity: 1;
+    transition-duration: 0.9s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: opacity;
+}
+
+/* ここまでがmenubtnについて */
+
+/* ----------------------------------------- */
+/*ここからがmainです */
+
+.wrappar{
+    /* border: solid; */
+    position: relative;
+    max-width: 100%;
+    margin: 50px auto 100px;
+    text-align: center;
+    background-image: url(../img/top_about_back.svg);
+    background-repeat: no-repeat;
+}/* wrappar でmainの幅を設定する*/
+
+.textpic{
+    /* border: solid; */
+    display: block;
+    width: 530px;
+    margin: 300px auto 70px;
+    z-index: 40;
+}
+
+.textarea p{
+    /* border: solid; */
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.textarea p:nth-child(7){
+    /* border: solid; */
+    margin-bottom: 80px;
+}
+
+.textarea .foodpic{
+    /* border: solid; */
+    display: block;
+    width: 350px;
+    margin: 0 auto 150px;
+}
+
+.textarea2{
+    /* border: solid; */
+    display: block;
+    max-width: 100%;
+    height: 400px;
+    background-image: url(../img/top_chu_back.svg);
+    background-repeat: no-repeat;
+    background-size: 105%;
+}
+
+.textarea2 img.title{
+    /* border: solid; */
+    display: block;
+    width: 530px;
+    margin: 0px auto 30px;
+}
+
+.textarea2 .flex{
+    /* border: solid; */
+    display: flex;
+    width: 90%;
+    /* max-height: 300px; */
+    height: 60%;
+    margin: 80px auto 0;
+    justify-content: center;
+}
+
+.textarea2 .flex li{
+    /* border: solid; */
+    display: block;
+    width: 250px;
+    height: 100%;
+}
+
+.textarea2 .flex a.coverpic1,
+.textarea2 .flex a.coverpic2,
+.textarea2 .flex a.coverpic3{
+    /* border: solid; */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 30%; */
+}
+
+.textarea2 .flex a.coverpic1 img:nth-child(1),
+.textarea2 .flex a.coverpic2 img:nth-child(1),
+.textarea2 .flex a.coverpic3 img:nth-child(1){
+    /* border: solid; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+}
+.textarea2 .flex a.coverpic1 img:nth-child(2),
+.textarea2 .flex a.coverpic2 img:nth-child(2),
+.textarea2 .flex a.coverpic3 img:nth-child(2){
+    /* border: solid; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.textarea2 .flex a.coverpic1:hover img:nth-child(1),
+.textarea2 .flex a.coverpic2:hover img:nth-child(1),
+.textarea2 .flex a.coverpic3:hover img:nth-child(1){
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.textarea2 .flex a.coverpic1:hover img:nth-child(2),
+.textarea2 .flex a.coverpic2:hover img:nth-child(2),
+.textarea2 .flex a.coverpic3:hover img:nth-child(2){
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+/* ------------------------------------------------ */
+/*ここからがnewsです */
+
+.subwrappar{
+    /* border: solid; */
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding: 0 50px;
+}/* subwrappar でmainの幅を設定する*/
+
+.subwrappar::before{
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/news_backimg.svg);
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size: 105%;
+    z-index: -10;
+}
+
+/* ここからNEWSの項目 */
+
+.news{
+    /* border: solid; */
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    margin: 0 auto 200px; 
+    border-radius: 30px;
+    background-color: #FAFAF8;
+}
+
+.news .title{
+    /* border: solid; */
+    display: block;
+    width: 600px;
+    height: 150px;
+    margin: 50px auto;
+}
+
+.news .title img{
+    /* border: solid; */
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.news span.food{
+    /* border: solid; */
+    position: absolute;
+    top: 50px;
+    content: "";
+    display: block;
+    background-image: url(../img/news_titleimg.svg);
+    width: 120px;
+    height: 120px;
+}
+
+/* 横並びのNEWSボックス */
+
+.firstnews{
+    /* border: solid; */
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    height: 430px;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+
+.firstnews a{
+    /* border: solid; */
+    display: table;
+    max-width: 370px;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    margin: 0 10px;
+}
+
+.firstnews .item1,
+.firstnews .item2{
+    position: relative;
+}
+
+.firstnews a p.tag1{
+    position: absolute;
+    left: 10px;
+    /* border: solid 1px; */
+    display: table-cell;
+    width: 140px;
+    height: 27px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #D1B694;
+    transform: rotate(-20deg);
+    z-index: 40;
+}
+
+.firstnews a p.tag2{
+    position: absolute;
+    left: 10px;
+    /* border: solid 1px; */
+    display: table-cell;
+    width: 140px;
+    height: 27px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #D1B694;
+    transform: rotate(-20deg);
+    z-index: 40;
+}
+
+.firstnews a img{
+    /* border: solid; */
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all .3s;
+    margin-bottom: 10px;
+}
+
+.firstnews a:hover img{
+    transform: rotate(3deg);
+}
+
+.firstnews time{
+    /* border: solid; */
+    display: flex;
+    margin-top: 20px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.firstnews time span.text1{
+    border-left: solid 1px;
+    display: inline-block;
+    width: 70px;
+    height: 14px;
+    line-height: 1;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.firstnews .text2{
+    /* border: solid; */
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* 横並びのNEWSボックス 終了*/
+
+.secondnews{
+    /* border: solid; */
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    height: 350px;
+    margin: 10px auto 60px;
+    justify-content: center;
+}
+
+.secondnews a{
+    /* border: solid; */
+    display: block;
+    max-width: 260px;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.secondnews .item1,
+.secondnews .item2,
+.secondnews .item3{
+    position: relative;
+}
+
+.secondnews a p.tag1,
+.secondnews a p.tag2,
+.secondnews a p.tag3{
+    position: absolute;
+    left: -10px;
+    border: solid 2px #EADED2;
+    display: block;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    background-color: #F1EFE6;
+    transform: rotate(-20deg);
+    z-index: 40;
+}
+
+.secondnews a img{
+    /* border: solid; */
+    display: block;
+    width: 90%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all .3s;
+    margin: 10px auto;
+}
+
+.secondnews a:hover img{
+    transform: rotate(3deg);
+}
+
+.secondnews time{
+    /* border: solid; */
+    display: flex;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 10px;
+    align-items: center;
+}
+
+.secondnews .text{
+    /* border: solid; */
+    display: block;
+    font-weight: bold;
+    padding: 0 10px;
+}
+/* ここまでがsecondnews */
+
+/* ここからbtn */
+.news .btn{
+    /* border: solid; */
+    position: relative;
+    text-align: center;
+}
+
+.news .btn a{
+    /* border: solid; */
+    border-radius: 30px 30px;
+    display: block;
+    width: 230px;
+    height: 60px;
+    padding: 16px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #333;
+    background-color: #D8C4AA;
+}
+
+.news .btn a:hover{
+    color: #FFFFFF;
+    background: #333;
+}
+
+.dli-arrow-right {
+    position: absolute;
+    left: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    position: relative;
+    width: 1.2em;
+    height: 0.2em;
+    background: #333;
+}
+
+.news .btn a:hover .dli-arrow-right{
+    background: #FFFFFF;
+}
+
+
+.dli-arrow-right::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    border: 0.2em solid ;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+    transform-origin: top right;
+    position: absolute;
+    top: 50%;
+    right: -0.5em;
+    box-sizing: border-box;
+}
+
+/* ここまでbtn 終了*/
+
+
+/* ここまでbackground */
+
+.background{
+    /* border: solid; */
+    position: relative;
+    width: 100%;
+}
+
+.background img{
+    /* position: absolute; */
+    position: relative;
+    width: 100%;
+    vertical-align: bottom;
+    z-index: 20;
+}
+.background span{
+    /* border: solid; */
+    position: absolute;
+    top: -130px;
+    right: 7%;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/top_staffimg_backimg.svg);
+    display: block;
+}
+
+/* ここまでbackground 終了*/
+
+/* ここまでtextwrappar開始*/
+.textwrappar{
+    /* border: solid; */
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    margin-top: 200px;
+}
+
+.textwrappar .textflex{
+    /* border: solid; */
+    display: flex;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.textwrappar .textflex li{
+    /* border: solid; */
+    display: block;
+    width: 500px;
+    margin: 0 20px;
+    padding-top: 30px;
+}
+
+.textwrappar .textflex li:first-child{
+    position: relative;
+}
+
+.textwrappar img{
+    /* border: solid; */
+    position: relative;
+    display: block;
+    min-width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    z-index: 30;
+}
+
+.textwrappar .backimage{
+    /* border: solid; */
+    position: absolute;
+    top: 130px;
+    left: -60px;
+    content: "";
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/staff_backimg.svg);
+}
+
+.textwrappar p{
+    display: block;
+    min-width: 400px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.textwrappar .btn{
+    position: relative;
+    text-align: center;
+}
+
+.textwrappar .btn a{
+    /* border: solid; */
+    border-radius: 30px 30px;
+    display: block;
+    width: 350px;
+    height: 100px;
+    padding: 35px;
+    margin: 60px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #FFFFFF;
+}
+
+.textwrappar .btn a:hover{
+    color: #FFFFFF;
+    background: #333;
+}
+
+.textwrappar .dli-arrow-right {
+    position: absolute;
+    left: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    position: relative;
+    width: 1.2em;
+    height: 0.2em;
+    background: #333;
+}
+
+.textwrappar a:hover .dli-arrow-right{
+    background: #FFFFFF;
+}
+
+/* ここまでtextwrappar終了*/
+
+/* ここまでpickUp 開始*/
+.pickup{
+    /* border: solid; */
+    text-align: center;
+    font-size: 17px;
+    padding: 100px 0;
+}
+
+.pickup .itemflex{
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    padding: 0 80px;
+    margin: 50px auto;
+}
+
+.pickup .itemflex li{
+    /* border: solid; */
+    display: block;
+    max-height: 100%;
+    margin: 0 3px;
+}
+
+
+.pickup .itemflex a{
+    /* border: solid; */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.pickup .itemflex img:nth-child(1){
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pickup .itemflex img:nth-child(2){
+    /* border: solid; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.pickup .itemflex a.pic:hover img:nth-child(1){
+    /* border: solid; */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.pickup .itemflex a.pic:hover img:nth-child(2){
+    /* border: solid; */
+    opacity: 1;
+    transition: opacity 1s;
+}
+/* ここまでpickUp　終了*/
+
+/* ここからmapwrappar 開始*/
+.mapwrappar{
+    /* border: solid; */
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+
+.mapwrappar .mapflex{
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.mapwrappar .mapflex img{
+    /* border: solid; */
+    display: block;
+    width: 55%;
+    object-fit: contain;
+    padding-top: 40px;
+}
+
+.mapwrappar .flexitem{
+    /* border: solid; */
+    position: relative;
+    display: block;
+    min-width: 350px;
+    width: 40%;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 12px;
+}
+
+.mapwrappar .backpic{
+    /* border: solid; */
+    content: "";
+    position: absolute;
+    top:0;
+    right: 20%;
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/shop_backimg.svg);
+z-index: 10;
+}
+
+.mapwrappar .flexitem h2{
+    /* border: solid; */
+    position: relative;
+    width: 350px;
+    font-size: 24px;
+    z-index: 20;
+}
+
+.mapwrappar .flexbox1{
+    /* border: solid; */
+    position: relative;
+    width: 350px;
+    font-size: 16px;
+    margin-top: 20px;
+    z-index: 20;
+}
+
+.mapwrappar .flexbox2{
+    /* border: solid; */
+    position: relative;
+    width: 350px;
+    font-size: 16px;
+    margin-top: 20px;
+    z-index: 20;
+}
+
+.mapwrappar .flexitem .textflexarea {
+    /* border: solid; */
+    display: flex;
+}
+
+.mapwrappar .flexitem .textflexarea a{
+    border-bottom: solid 1px;
+    display: block;
+    margin-left: 20px;
+}
+
+/* ここからbtn開始 */
+.mapwrappar .btn1{
+    /* border: solid; */
+    position: relative;
+    height: 80px;
+    margin: 70px 0 30px;
+    text-align: center;
+}
+
+.mapwrappar .btn1 a{
+    /* border: solid; */
+    border-radius: 30px 30px 30px 30px;
+    display: block;
+    width: 350px;
+    height: 100%;
+    padding: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #FFFFFF;
+}
+
+.mapwrappar .btn1 a:hover{
+    color: #FFFFFF;
+    background: #333;
+}
+
+.dli-arrow-right1 {
+    position: absolute;
+    left: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    position: relative;
+    width: 1.2em;
+    height: 0.2em;
+    background: #333;
+}
+
+.mapwrappar .btn1 a:hover .dli-arrow-right1{
+    background: #FFFFFF;
+}
+
+.dli-arrow-right1::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    border: 0.2em solid ;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+    transform-origin: top right;
+    position: absolute;
+    top: 50%;
+    right: -0.5em;
+    box-sizing: border-box;
+}
+
+/* ここまでbtn 終了*/
+/* ここからbtn開始 */
+
+.mapwrappar .btn2{
+    /* border: solid; */
+    position: relative;
+    height: 80px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.mapwrappar .btn2 a{
+    /* border: solid; */
+    border-radius: 30px 30px 30px 30px;
+    display: block;
+    width: 350px;
+    height: 100%;
+    padding: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #FFFFFF;
+}
+
+.mapwrappar .btn2 a:hover{
+    color: #FFFFFF;
+    background: #333;
+}
+
+.dli-arrow-right2 {
+    position: absolute;
+    left: 75px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    position: relative;
+    width: 1.2em;
+    height: 0.2em;
+    background: #333;
+}
+
+.mapwrappar .btn2 a:hover .dli-arrow-right2{
+    background: #FFFFFF;
+}
+
+.dli-arrow-right2::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    border: 0.2em solid ;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+    transform-origin: top right;
+    position: absolute;
+    top: 50%;
+    right: -0.5em;
+    box-sizing: border-box;
+}
+
+/* ここまでbtn 終了*/
+
+/* ここからfooter 開始*/
+.footer{
+    /* border: solid; */
+    width: 100%;
+    margin-top: 100px;
+}
+
+.inner{
+    /* border: solid; */
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 1100px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.inner img{
+    /* border: solid; */
+    display: block;
+    width: 33%;
+}
+
+.inner .flex{
+    /* border: solid; */
+    display: flex;
+    width: 33%;
+    padding-top: 70px;
+    padding-left: 60px;
+}
+
+.inner .flex h2{
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.inner .flex a{
+    /* border: solid; */
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.inner .flex a.move{
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+
+.inner .flex a.move:hover{
+    transform: translateY(-7px);
+    transition: all 0.5s;
+}
+
+
+.inner .flex .flexinner{
+    /* border: solid; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.inner .flex .flexinner .icon{
+    /* border: solid; */
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.inner .flex .flexinner .pic{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.copy{
+    text-align: center;
+    color: #959494;
+    margin: 70px 0;
+}
