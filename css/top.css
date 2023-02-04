@@ -1,0 +1,151 @@
+@charset "UTF-8";
+#page-top {
+    /* border: solid; */
+    position: fixed;
+    display: flex;
+    justify-content:space-between ;
+    width: 100%;
+    height: 100px;
+    right: 10px;
+    top:10px;
+    z-index: 1000;
+      /* はじめは非表示 */
+    opacity: 0;
+    transform: translateX(100px);
+    z-index: 1000;
+}
+
+#page-top.LeftMove{
+    animation: LeftAnime 0.5s forwards;
+}
+
+@keyframes LeftAnime{
+    from {
+    opacity: 0;
+    transform: translateY(0);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0px);
+    }
+}
+
+#page-top.RightMove{
+    animation: RightAnime 0.5s forwards;
+}
+
+@keyframes RightAnime{
+    from {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    to {
+    opacity: 0;
+    transform: translateY(0);
+    }
+}
+
+/* スマイルくんが笑う動き開始 */
+#page-top .imgfixed{
+    /* border: solid; */
+    position: relative;
+    top:0;
+    left: 40px;
+    display: block;
+    width: 100px;
+}
+
+#page-top .imgfixed:hover .smile1{
+    opacity: 0;
+}
+/* 真顔日表示にする */
+
+#page-top .imgfixed:hover .smile2{
+    opacity: 1;
+}
+/* ウィンク表示にする */
+
+#page-top .smile1,
+#page-top .smile2{
+    /* border: solid; */
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#page-top .smile2{
+    opacity: 0;
+}
+
+/* スマイルくんが笑う動き終了 */
+
+#page-top .flex {
+    /* border: solid red; */
+    display: flex;
+    width: 200px;
+}
+
+#page-top .flex .item1,
+#page-top .flex .item2{
+    /* border: solid; */
+    position: relative;
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#page-top .flex .item1 span.text{
+    position: absolute;
+    top: 20%;
+    left: 23%;
+    z-index: 1000;
+}
+
+#page-top .flex .item2 span{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    color: #FFFFFF;
+    z-index: 1000;
+}
+
+.humbuger{
+    position: relative;
+}
+
+.humbugeritem1{
+    /* border: solid; */
+    position: absolute;
+    top: 43px;
+    left: 21px;
+    display: block;
+    width: 50px;
+    transition: all .3s;
+}
+.humbugeritem2{
+    /* border: solid; */
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    display: block;
+    width: 60px;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.humbugeritem2.panelactive{
+    /* border: solid; */
+    position: absolute;
+    top: 43px;
+    left: 15px;
+    display: block;
+    width: 60px;
+    opacity: 1;
+    z-index: 1000;
+}
+
+
+
+
